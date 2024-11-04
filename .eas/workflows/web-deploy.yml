@@ -6,13 +6,12 @@ on:
 
 jobs:
   deploy-web:
-    params:
-      steps:
-        - uses: eas/checkout
-          name: Checkout code
-        
-        - name: Export web build
-          run: npx expo export --platform web
-        
-        - name: Deploy with EAS
-          run: eas deploy 
+    steps:
+      - uses: eas/checkout
+        name: Checkout code
+      
+      - name: Export web build
+        run: npx expo export --platform web
+      
+      - name: Deploy with EAS
+        run: eas deploy 
