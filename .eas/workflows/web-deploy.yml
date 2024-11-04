@@ -7,10 +7,7 @@ on:
 jobs:
   deploy-web:
     steps:
-      - uses: eas/checkout
-      
-      - name: Export web build
-        run: npx expo export --platform web
-      
-      - name: Deploy with EAS
-        run: eas deploy 
+      - run: eas/checkout
+      - run: eas/install_node_modules
+      - run: npx expo export --platform web
+      - run: eas deploy
