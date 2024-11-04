@@ -8,7 +8,6 @@ jobs:
   deploy-web:
     steps:
       - uses: eas/checkout
-        name: Checkout code
       
       - name: Export web build
         run: npx expo export --platform web
