@@ -31,6 +31,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f43366ad-958b-42b0-8cec-a6ba39f7468d"
+      }
+    },
+    "owner": "jonexpo"
   }
 }
