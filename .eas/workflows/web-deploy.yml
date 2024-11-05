@@ -12,4 +12,4 @@ jobs:
       - name: Export web build
         run: npx expo export --platform web
       - name: Deploy with EAS
-        run: eas deploy
+        run: npx eas-cli@latest deploy
